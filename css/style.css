@@ -1,0 +1,482 @@
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/**************************************** layout 1 ****************************************/
+#header{
+    height: 382px;
+    max-width: 997px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color:#184A45FF;
+    position: relative;
+}
+nav {
+    background-color:#B0B8B4FF;
+}
+.navbar{      
+    position: absolute;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 714px;
+    height: 52px;
+    right: 0px;
+    bottom: 0px;
+}
+.navbar > div {
+    text-align: center;
+    padding: 16px 0;    
+}
+nav > div > a{
+    text-decoration: none;
+    font-size: 17px;
+}
+.navbar1 > div > a {
+    color: #184A45FF;
+    font-weight: bold;
+}
+.selected{
+    background-color: #FC766AFF;
+}
+.triangle-left {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: 65px;
+    margin-top: 40px;
+    border-top: 30px solid transparent;
+    border-left: 45px solid #FC766AFF;
+    border-bottom: 30px solid transparent;
+}
+.triangle-right {
+    position: absolute;
+    width: 0;
+    height: 0;
+    margin-left: 20px;
+    margin-top: 40px;
+    border-top: 30px solid transparent;
+    border-right: 45px solid #FC766AFF;
+    border-bottom: 30px solid transparent;
+}
+.all_div > div{
+    background-color: #184A45FF;
+}
+.all_div {
+    position: relative;
+    max-width: 997px;
+    width: 100%;
+    height: 491px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+.rectangle{
+    position: absolute;
+    margin-top: 24px;
+    left: 25px;
+    width: 90px;
+    height: 30px;
+    background-color: #184A45FF;
+}
+
+
+.div1{
+    position: absolute;
+    margin-left: 272px;
+    margin-top: 31px;
+    width: 333px;
+    height: 388px;
+
+}
+.div2{
+    position: absolute;
+    margin-top: 31px;
+    margin-left: 633px;
+    width: 338px;
+    height: 336px;
+}
+#footer{
+    max-width: 997px;
+    width: 100%;
+    height: 118px;
+    background-color:#184A45FF;
+    margin: 0px auto;
+}
+
+@media screen and (min-width:801px) and (max-width:1099px){
+    .rectangle{
+        position: absolute;
+        margin-top: 24px;
+        left: 15px;
+        width: 90px;
+        height: 30px;
+        background-color: #184A45FF;
+    }
+    .all_div {
+        position: relative;
+        max-width: 900px;
+        width: 100%;
+        height: 491px;
+        margin-left: auto; 
+        margin-right: auto;
+    }
+    .div1{
+        position: absolute;
+        margin-left: 120px;
+        margin-top: 31px;
+        width: 333px;
+        height: 388px;
+        background-color: #184A45FF;
+    
+    }
+    .div2{
+        position: absolute;
+        margin-top: 31px;
+        margin-left: 470px;
+        width: 338px;
+        height: 336px;
+        background-color: #184A45FF;
+    }
+
+}
+
+/*********Layout 2 - Design for tables*********/
+@media screen and (min-width: 481px) and (max-width: 800px) {
+    *{
+        max-width: 800px;
+    }
+    #header{
+        position: relative;
+        height: 200px;
+        width: 100%;
+    }
+    .all_div > div:nth-child(2){
+        position: absolute;
+        background-color: #184A45FF;
+        margin-left:170px;
+        margin-top: 24px;
+        width:300px;
+    }
+    .all_div > div:nth-child(3){
+        position: absolute;
+        background-color: #184A45FF;
+        margin-left:170px;
+        margin-top: 450px;
+        width:303px;
+    }
+    .all_div {
+        max-width: 480px;
+        width: 100%;
+    }
+    .navbar1 {
+        position: relative;
+        display: block;
+        width: 300px;
+        top: 5px;
+        float: right;
+        margin-right: 5px;
+    }
+    .navbar1 > div:nth-child(1) {
+        background-color:#FC766AFF;
+    }
+   nav > div {
+        background-color:#B0B8B4FF;
+    }
+    #section{
+        position: relative;
+        min-height: 850px;
+    }
+    #footer{
+        position: absolute;
+        margin-top: 20px;
+        height: 80px;
+        width: 100%;
+    }
+}
+
+/**************************************** layout 2 ****************************************/
+#header2 > div{
+    position: relative;
+    height: 190px;
+}
+aside{
+    background-color:#B0B8B4FF;
+}
+#aside1{ 
+    width: 240px; 
+    float: left;
+    height: 1700px;
+}
+.navbar2 > div{
+    width: 240px;
+    height: 135px;
+}
+.navbar2 > div > a{
+    position: absolute;
+    margin-left: 7px;
+    margin-top: 60px;
+    font-size: large;
+    font-weight: bold;
+    color: black;
+}
+#aside2{
+    position: relative;
+    float: right;
+    width: 335px;
+    height: 1700px;
+}
+#aside2 > div:nth-child(1){
+    width:120px;
+    height: 335px;
+    background-color: #184A45FF;
+    opacity: 0.5;
+    margin-top: 60px;
+    float: right;
+    margin-right: 40px;
+}
+#aside2 > div:nth-child(2){
+    width:120px;
+    height: 120px;
+    background-color: #184A45FF;
+    opacity: 0.5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1525px;
+}
+#section2{
+    position: absolute;
+    width: 815px;
+    margin-left: 240px;
+    height: 1700px;
+}
+#section2 > div > div {
+    width: 335px;
+    height: 335px;
+}
+.divs_order1{
+    position: relative;
+    width: 700px;
+    height: 335px;
+    margin-left: 30px;
+}
+.divs_order1 > div{
+    position: absolute;
+}
+.divs_order1 :nth-child(2){
+    position: absolute;
+    margin-left: 370px;
+}
+.divs_order2{
+    position: relative;
+    width: 705px;
+    height: 730px;
+    margin-left: 30px;
+    margin-top: 120px;
+}
+.divs_order2 :nth-child(2){
+    position: absolute;    
+    margin-top: 60px;
+}
+.divs_order2 :nth-child(3){
+    position: absolute;
+    margin-left: 370px;
+    margin-top: -120px;
+}
+#footer2{
+    position: relative;
+    height: 120px;
+    margin-top: 1700px;
+    background-color: #184A45FF;
+}
+
+/**************************************** layout 3 ****************************************/
+#body3{
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
+.left_header{
+    position: absolute;
+    float: left;
+    width: 500px;
+    height: 500px;
+    background-color: black;
+    opacity: 0.8;
+    text-align: center;
+}
+.right_header{
+    position: static;
+    float: right;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.navbar3{
+    width: 500px;
+    height: 60px;
+}
+.navbar3 > div > a{
+    color: black;
+}
+.right_header > div{
+    position:static;
+    width: 250px;
+    height: 250px;
+    background-color: black;
+}
+#header3{
+    position: relative;
+    width: 100%;
+}
+.right_header > div:nth-child(1){
+    opacity: 0.7;
+}
+.right_header > div:nth-child(2){
+    opacity: 0.5;
+}
+.right_header > div:nth-child(3){
+    opacity: 0.3;
+}
+.right_header > div:nth-child(4){
+    opacity: 0.1;
+}
+#section3{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#footer3{
+    position: absolute;
+    height: 120px;
+    background-color: black;
+    opacity: 0.4;
+    max-width: 1000px;
+    width: 100%;
+}
+.icon > i{
+    margin-top:220px;
+    font-size:85px;
+    color: white;
+}
+.newDivAdded, .icon > i:hover{
+    cursor: pointer;
+}
+#bigDiv{
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: auto auto;
+    text-align: center;
+    font-weight: bold;
+    font-size: 32px;
+}
+.newDivAdded{
+    width: 250px;
+    height: 250px;
+}
+
+
+/********* Layout 3 - Desgin for tablets *********/
+@media screen and (min-width:481px) and (max-width:800px){
+    .left_header{
+        max-width: 800px;
+        width: 100%;
+    }
+    .right_header{
+        visibility: hidden;
+    }
+    .navbar3{
+        position: relative;
+        display: block;
+        max-width: 800px;
+        width: 100%;
+        margin-top: 38px;
+    } 
+    #section3{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #bigDiv{
+        max-width: 800px;
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .newDivAdded{
+        max-width: 400px;
+        width: 100%;
+        height: 400px;
+        background-color: black;
+    }
+    #footer3{
+        position: absolute;
+    }
+}
+
+/********* Layout 3 - Desgin for smart phones *********/
+@media screen and (max-width:480px){
+    .logo{
+        width: 130px;
+        height: 100px;
+        margin: 0 auto;
+    }
+    .icon > i{
+        position: absolute;
+        margin-top: 100px;
+        margin-left: -30px;
+    }
+    .left_header{
+        max-width: 800px;
+        width: 100%;
+    }
+    .right_header{
+        visibility: hidden;
+    }
+    .navbar3{
+        max-width: 480px;
+        width: 100%;
+    }
+    #section3{
+        height: 100%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto;
+    }
+    #bigDiv{
+        max-width: 480px;
+        width: 100%;
+        height: 480px;
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .newDivAdded{
+        max-width: 240px;
+        width: 100%;
+        height: 240px;
+        background-color: black;
+    }
+    #footer3{
+        position: absolute;
+    }
+    .counterNum{
+        text-align: center;
+        font-size: 40px;
+    }
+}
+
+/********* Layout 3 - arrange a navbar when the screen less than 195px *********/
+@media screen and (max-width:195px){
+    .navbar > div {
+        text-align: center;
+        padding: 0px 0;
+    }
+}
